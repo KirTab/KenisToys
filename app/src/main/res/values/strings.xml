@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KenisToys</string>
+    <string name="action_settings">Settings</string>
+    <string name="kenis">Kenis</string>
+    <string name="toys">Toys</string>
+
+</resources>
