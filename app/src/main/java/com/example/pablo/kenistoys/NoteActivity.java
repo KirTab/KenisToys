@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 
 public class NoteActivity extends AppCompatActivity {
+    EditText et;
+    String text = "";
+    Bundle bundle = new Bundle();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +21,11 @@ public class NoteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_note);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
+        et = (EditText) findViewById(R.id.edit_Text);
+        //if(!et.equals(""))
+        //    et.setText(text);
+        et.setText(bundle.getString("et"));
+
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -39,6 +46,8 @@ public class NoteActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         Log.d("aktywność", "onPause");
+        //text= et.getText().toString();
+        bundle.putString("et", et.getText().toString());
         super.onPause();
     }
 
