@@ -37,6 +37,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pablo.kenistoys.MainActivity" />
         </activity>
+        <activity
+            android:name=".NoteActivity"
+            android:label="@string/title_activity_note"
+            android:parentActivityName=".ToysActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pablo.kenistoys.ToysActivity" />
+        </activity>
     </application>
 
 </manifest>
