@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/kenis"
+        android:onClick="click"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="148dp" />
 
@@ -23,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/toys"
+        android:text= "@string/toys"
+        android:onClick="click"
         app:layout_constraintTop_toBottomOf="@+id/kenisBtn"
         tools:layout_editor_absoluteX="0dp" />
 
